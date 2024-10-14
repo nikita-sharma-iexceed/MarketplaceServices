@@ -1,0 +1,13 @@
+package com.iexceed.marketplacesrv;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class MarketplaceServicesApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(MarketplaceServicesApplication.class, args);
+	}
+
+}

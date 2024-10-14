@@ -1,0 +1,90 @@
+{
+  "1": {
+    "stageList": [
+      {
+        "title": "Order Placed",
+        "desc": "The order has been successfully confirmed by our system."
+      },
+      {
+        "title": "Quote Requested",
+        "desc": "The seller has received your request for quote."
+      }
+    ]
+  },
+  "2": {
+    "stageList": [
+      {
+        "title": "Quote Received",
+        "desc": "The seller has provided a quote for your review."
+      }
+    ]
+  },
+  "3": {
+    "stageList": [
+      {
+        "title": "Revision Requested",
+        "desc": "The seller has received your request for revision."
+      }
+    ]
+  },
+  "4": {
+    "stageList": [
+      {
+        "title": "Quote Accepted",
+        "desc": "You have accepted the quote. The service will begin now."
+      },
+      {
+        "title": "Advance Payment Processed",
+        "desc": "Your advance payment of has been successfully processed."
+      },
+      {
+        "title": "Work in Progress",
+        "desc": "Your project is in progress. You will be notified upon completion."
+      }
+    ]
+  },
+  "5": {
+    "stageList": [
+      {
+        "title": "Service Delivered",
+        "desc": "The seller has delivered the service for your review."
+      },
+      {
+        "title": "Review Delivered Service",
+        "desc": "Please review the service delivery items sent to you."
+      }
+    ]
+  },
+  "6": {
+    "stageList": [
+      {
+        "title": "Review Completed",
+        "desc": "You have reviewed and approved the service."
+      },
+      {
+        "title": "Final Payment Processed",
+        "desc": "The remaining payment has been successfully processed."
+      },
+      {
+        "title": "Order Completed",
+        "desc": "The order is now complete. Thank you for using our platform!"
+      }
+    ]
+  },
+  "7": {
+    "stageList": [
+      {
+        "title": "Order Rejected By You",
+        "desc": "The order was cancelled by you."
+      }
+    ]
+  },
+  "8": {
+    "stageList": [
+      {
+        "title": "Revision Requested",
+        "desc": "The order was cancelled by you."
+      }
+    ]
+  }
+}

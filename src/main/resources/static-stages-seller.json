@@ -1,0 +1,70 @@
+{
+	"1": {
+		"stageList": [
+			{
+				"title": "Quote Received",
+				"desc": "A new order has been placed by a buyer. The details are available for your review."
+			}
+		]
+	},
+	"2": {
+		"stageList": [
+			{
+				"title": "Quote Sent",
+				"desc": "Your quote has been sent to the buyer and is currently under review."
+			}
+		]
+	},
+	"3": {
+		"stageList": [
+			{
+				"title": "Quote Accepted",
+				"desc": "The buyer has accepted the quote you had sent."
+			},
+			{
+				"title": "Advance Payment Received",
+				"desc": "he buyer has made an advance payment of 30% as per the agreed quote. You can now begin the service."
+			},
+			{
+				"title": "Service In Progress",
+				"desc": "You are currently working on the service."
+			}
+		]
+	},
+	"4": {
+		"stageList": [
+			{
+				"title": "Service Delivered",
+				"desc": "You have successfully delivered the service. The buyer will review and confirm."
+			},
+			{
+				"title": "Awaiting Buyer Review",
+				"desc": "The buyer is reviewing the delivered service. You will be notified once they confirm completion."
+			}
+		]
+	},
+	"5": {
+		"stageList": [
+			{
+				"title": "Delivery Accepted",
+				"desc": "The buyer has accepted the service. You will receive the remaining payment."
+			},
+			{
+				"title": "Final Payment Received",
+				"desc": "The buyer has confirmed the completion of the service and released the remaining payment"
+			},
+			{
+				"title": "Order Completed",
+				"desc": "The service has been marked as completed. Thank you for your work!"
+			}
+		]
+	},
+	"6": {
+		"stageList": [
+			{
+				"title": "Order rejected By You",
+				"desc": "The order was cancelled by you."
+			}
+		]
+	}
+}

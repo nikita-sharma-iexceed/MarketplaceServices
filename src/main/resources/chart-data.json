@@ -1,0 +1,53 @@
+{
+	"chartType": "Earnings",
+	"earnings": [
+		{
+			"month": "January",
+			"amount": 12000
+		},
+		{
+			"month": "February",
+			"amount": 10000
+		},
+		{
+			"month": "March",
+			"amount": 15000
+		},
+		{
+			"month": "April",
+			"amount": 18000
+		},
+		{
+			"month": "May",
+			"amount": 22000
+		},
+		{
+			"month": "June",
+			"amount": 17000
+		},
+		{
+			"month": "July",
+			"amount": 20000
+		},
+		{
+			"month": "August",
+			"amount": 21000
+		},
+		{
+			"month": "September",
+			"amount": 25000
+		},
+		{
+			"month": "October",
+			"amount": 23000
+		},
+		{
+			"month": "November",
+			"amount": 27000
+		},
+		{
+			"month": "December",
+			"amount": 30000
+		}
+	]
+}
