@@ -18,6 +18,7 @@ import com.iexceed.marketplacesrv.exception.SomethingWentWrongException;
 import com.iexceed.marketplacesrv.model.BuyerOrders;
 import com.iexceed.marketplacesrv.model.BuyerStages;
 import com.iexceed.marketplacesrv.model.Categories;
+import com.iexceed.marketplacesrv.model.Categories.CategoryData;
 import com.iexceed.marketplacesrv.model.QuoteReceivedDetails;
 import com.iexceed.marketplacesrv.model.Review;
 import com.iexceed.marketplacesrv.model.SellerOrders;
@@ -38,6 +39,7 @@ import com.iexceed.marketplacesrv.repository.ServiceProviderRepository;
 import com.iexceed.marketplacesrv.request.WolRequest;
 import com.iexceed.marketplacesrv.request.WolSubmitObject;
 import com.iexceed.marketplacesrv.response.CategoriesResponse;
+import com.iexceed.marketplacesrv.response.CategoriesResponse.CategoryObj;
 import com.iexceed.marketplacesrv.response.OrderTimelineResponse;
 import com.iexceed.marketplacesrv.response.OrdersResObj;
 import com.iexceed.marketplacesrv.response.OrdersResponse;
@@ -85,14 +87,24 @@ public class MarketplaceService {
 	private StageDataService stageDataService;
 
 	public CategoriesResponse getCategories() {
-		CategoriesResponse categoryResponse = new CategoriesResponse();
-		categoryResponse.setCategories(categoryRepo.findAll());
-		return categoryResponse;
+		List<Categories> categories = categoryRepo.findAll();
+		List<CategoryObj> categoryData = new ArrayList<>();
+		for (Categories cat : categories) {
+			CategoryData data = cat.getCategoryData();
+			CategoryObj catObj = new CategoriesResponse.CategoryObj(
+				cat.getCId(),
+				data.getCategory(),
+				data.getImgUrl(),
+				data.getCategoryDesc()
+			);
+			categoryData.add(catObj);
+		}
+		return new CategoriesResponse(categoryData);
 	}
 
 	public String getCategoryById(String id) {
 		Categories category = categoryRepo.findById(id).get();
-		return category.getCategory();
+		return category.getCategoryData().getCategory();
 	}
 
 	public ServiceProviderResponse getSPByCategory(String categoryId) {
